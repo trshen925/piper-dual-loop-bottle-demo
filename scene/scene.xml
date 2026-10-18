@@ -1,0 +1,668 @@
+<mujoco model="piper">
+  <compiler angle="radian" />
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="assets/fd4a3d6d0266205f.stl" />
+    <mesh name="link1" content_type="model/stl" file="assets/9ee6e1d67c0241f4.stl" />
+    <mesh name="link2" content_type="model/stl" file="assets/0d37675b699b643f.stl" />
+    <mesh name="link3" content_type="model/stl" file="assets/e8ae51f17c0c7f6d.stl" />
+    <mesh name="link4" content_type="model/stl" file="assets/efa33022976218f2.stl" />
+    <mesh name="link5" content_type="model/stl" file="assets/a1c69d1c7f6f8c60.stl" />
+    <mesh name="link6" content_type="model/stl" file="assets/88374973bc3bd9e7.stl" />
+    <mesh name="gripper_base" content_type="model/stl" file="assets/2895bfa6f1eef2d0.stl" />
+    <mesh name="link7" content_type="model/stl" file="assets/475a7d8db056524d.stl" />
+    <mesh name="link8" content_type="model/stl" file="assets/3f88d534a85e28a3.stl" />
+    <mesh name="display_tabletop" file="assets/7ab4857aa4d3757f.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_table_leg" file="assets/6608f6fe4639f09c.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_table_leg.001" file="assets/6608f6fe4639f09c.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_table_leg.002" file="assets/6608f6fe4639f09c.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_table_leg.003" file="assets/6608f6fe4639f09c.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_floor" file="assets/1b26de7f3b0ffc3c.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_bottle" file="assets/e2bceb1016311c30.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_white_pad" file="assets/89a3a7e385e2579c.obj" scale="0.9999999882684417 0.9999999882684417 1.0" />
+    <mesh name="display_base_mount_plate" file="assets/02086a1f05f1151a.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_thermos" file="assets/eb66b4e9f1b25543.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_thermos_pink_band" file="assets/61e12ddbd7bb4939.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_marker" file="assets/d52625ce4b72294f.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_black_rectangular_device" file="assets/d9c94d0aa129b4b8.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_monitor" file="assets/8404cb7274ceacd8.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_monitor_stand" file="assets/3c0142d6c47783fc.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_keyboard" file="assets/50eea0b3f27834ae.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_camera2_stand" file="assets/62914af6242202e0.obj" scale="1.0000000146523613 1.0000000609816881 0.9999999733124524" />
+    <mesh name="display_camera2_clamp" file="assets/0421003d91605106.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_camera2_housing" file="assets/8686e2fe9b6726ac.obj" scale="0.9999999911486636 1.0000000106849107 0.9999999632693083" />
+    <mesh name="display_wrist_camera_housing" file="assets/a38e88330e4bb6f7.obj" scale="0.999999970449753 0.9999999898793938 0.9999999791723665" />
+    <mesh name="display_open_carton" file="assets/6ba266bfec9093e3.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_open_carton.001" file="assets/86f7d442f927e0cb.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_open_carton.002" file="assets/86f7d442f927e0cb.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_open_carton.003" file="assets/bd9e3bf0548147f1.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_open_carton.004" file="assets/bd9e3bf0548147f1.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_wrist_camera_bracket" file="assets/0931c24b79d1066a.obj" scale="1.0000000426796225 0.9999999987929109 1.0000000163612295" />
+    <mesh name="display_stand_upper_arm" file="assets/01fb06198ed03da2.obj" scale="1.0000000719385984 1.0000000369857516 1.0000000335157753" />
+    <mesh name="display_stand_red_joint" file="assets/98cab83726448888.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_cabinet_body" file="assets/a5a27c4aa3b4be57.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_chair_seat" file="assets/47572918832cc645.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_chair_back" file="assets/b45f21dfcce336c4.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_chair_support" file="assets/9c6d8fc310577972.obj" scale="1.0000000000000038 1.0000000000000038 1.1805555820465088" />
+    <mesh name="display_cabinet_handle" file="assets/e50b370299860ee9.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_cabinet_handle.001" file="assets/e50b370299860ee9.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_cabinet_door" file="assets/687a5befad4b4c39.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_cabinet_door.001" file="assets/687a5befad4b4c39.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_carton_flap" file="assets/abe9c1ddffc66122.obj" scale="0.9999999948352141 1.0 0.9999999948352141" />
+    <mesh name="display_key" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.001" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.002" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.003" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.004" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.005" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.006" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.007" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.008" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.009" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.010" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.011" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.012" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.013" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.014" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.015" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.016" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.017" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.018" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.019" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.020" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.021" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.022" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.023" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.024" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.025" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.026" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.027" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.028" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.029" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.030" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.031" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.032" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.033" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.034" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.035" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.036" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.037" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.038" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.039" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.040" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.041" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.042" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.043" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.044" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.045" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.046" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.047" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.048" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.049" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.050" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.051" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.052" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.053" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.054" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.055" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.056" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.057" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.058" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.059" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.060" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.061" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.062" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.063" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_key.064" file="assets/3cf46c2c8a8ce7a9.obj" scale="0.9999999817127352 0.9999999817127352 1.0" />
+    <mesh name="display_mouse" file="assets/212009b548219c14.obj" scale="1.0 1.0 1.0" />
+    <mesh name="display_grey_floor" file="assets/e384bae7971a3d1f.obj" scale="1.0 1.0 1.0" />
+    <mesh name="sync_tabletop__0" file="assets/eea9b9d2b01a337f.obj" />
+    <texture name="tex_tabletop__0" type="2d" file="assets/ea40f76374e888e9.png" />
+    <material name="mat_tabletop__0" rgba="1 1 1 1" specular=".2" shininess=".3" reflectance="0" texture="new_wood" texuniform="false" texrepeat="1 1" />
+    <mesh name="sync_table_leg__0" file="assets/d362285297daddb6.obj" />
+    <material name="mat_table_leg__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_table_leg.001__0" file="assets/47de909deb533eb9.obj" />
+    <material name="mat_table_leg.001__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_table_leg.002__0" file="assets/3a3cb7ad9fde9ae1.obj" />
+    <material name="mat_table_leg.002__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_table_leg.003__0" file="assets/89da3cbea6ade174.obj" />
+    <material name="mat_table_leg.003__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_floor__0" file="assets/e9d0413548b8c327.obj" />
+    <material name="mat_floor__0" rgba="0.02500000037252903 0.25 0.17000000178813934 1" specular="0.15" shininess="0.05" reflectance="0" />
+    <mesh name="sync_bottle__0" file="assets/42f8f91092e9c094.obj" />
+    <texture name="tex_bottle__0" type="2d" file="assets/9ae6e589e0355a1f.png" />
+    <material name="mat_bottle__0" rgba="1 1 1 1" specular="0.15" shininess="0.6800000071525574" reflectance="0" texture="tex_bottle__0" texuniform="false" />
+    <mesh name="sync_bottle__1" file="assets/2855bb453e88c934.obj" />
+    <texture name="tex_bottle__1" type="2d" file="assets/9ae6e589e0355a1f.png" />
+    <material name="mat_bottle__1" rgba="1 1 1 1" specular="0.15" shininess="0.5" reflectance="0" texture="new_cap" texuniform="false" />
+    <mesh name="sync_white_pad__0" file="assets/aea25b620eefdfd7.obj" />
+    <material name="mat_white_pad__0" rgba="0.9100000262260437 0.9399999976158142 0.949999988079071 1" specular="0.15" shininess="0.19999998807907104" reflectance="0" />
+    <mesh name="sync_piper_base_link__0" file="assets/98499f0ac3f3115e.obj" />
+    <material name="mat_piper_base_link__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link1__0" file="assets/ef6516b89e247d73.obj" />
+    <material name="mat_piper_link1__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link2__0" file="assets/eb22bdf0d68c0324.obj" />
+    <material name="mat_piper_link2__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link2__1" file="assets/b91c089df882a667.obj" />
+    <material name="mat_piper_link2__1" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular=".45" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_piper_link3__0" file="assets/509e870dff72fbb4.obj" />
+    <material name="mat_piper_link3__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link3__1" file="assets/ef2470ebd3af3ca5.obj" />
+    <material name="mat_piper_link3__1" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular=".45" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_piper_link4__0" file="assets/9a8e225d32935532.obj" />
+    <material name="mat_piper_link4__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link5__0" file="assets/5a6483896f38a48f.obj" />
+    <material name="mat_piper_link5__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link6__0" file="assets/a81e46efd2a1dc4a.obj" />
+    <material name="mat_piper_link6__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_gripper_base__0" file="assets/9205f3214c2cf031.obj" />
+    <material name="mat_piper_gripper_base__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link7__0" file="assets/3e015e20e3110e39.obj" />
+    <material name="mat_piper_link7__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_piper_link8__0" file="assets/95f8fd9d932261a6.obj" />
+    <material name="mat_piper_link8__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular=".45" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_base_mount_plate__0" file="assets/cc76eb4321b65478.obj" />
+    <material name="mat_base_mount_plate__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_thermos__0" file="assets/3a904563f565c7a1.obj" />
+    <material name="mat_thermos__0" rgba="0.7799999713897705 0.7699999809265137 0.6299999952316284 1" specular="0.15" shininess="0.5" reflectance="0" />
+    <mesh name="sync_thermos_pink_band__0" file="assets/5475266cf762289b.obj" />
+    <material name="mat_thermos_pink_band__0" rgba="0.6000000238418579 0.07999999821186066 0.20000000298023224 1" specular="0.15" shininess="0.5" reflectance="0" />
+    <mesh name="sync_marker__0" file="assets/1dcff748f6b1765f.obj" />
+    <material name="mat_marker__0" rgba="0.9100000262260437 0.9399999976158142 0.949999988079071 1" specular="0.15" shininess="0.19999998807907104" reflectance="0" />
+    <mesh name="sync_black_rectangular_device__0" file="assets/2cf2c1c0edfcaa50.obj" />
+    <material name="mat_black_rectangular_device__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_monitor__0" file="assets/b7e57a2419cfe7a6.obj" />
+    <material name="mat_monitor__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_monitor_stand__0" file="assets/ed1fd2c4b8a67dac.obj" />
+    <material name="mat_monitor_stand__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_keyboard__0" file="assets/4433d743c72f4f3d.obj" />
+    <material name="mat_keyboard__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_camera2_stand__0" file="assets/ee3e0dad39815c82.obj" />
+    <material name="mat_camera2_stand__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_camera2_clamp__0" file="assets/597247d6951b5826.obj" />
+    <material name="mat_camera2_clamp__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_camera2_housing__0" file="assets/eaac0ade342022d4.obj" />
+    <material name="mat_camera2_housing__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_wrist_camera_housing__0" file="assets/38eb0c1932306b04.obj" />
+    <material name="mat_wrist_camera_housing__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_open_carton__0" file="assets/7bcc1ac113af9437.obj" />
+    <material name="mat_open_carton__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_open_carton.001__0" file="assets/231584b5f547e4c1.obj" />
+    <material name="mat_open_carton.001__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_open_carton.002__0" file="assets/6020ad2ad8264270.obj" />
+    <material name="mat_open_carton.002__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_open_carton.003__0" file="assets/ab5348958c80c2ec.obj" />
+    <material name="mat_open_carton.003__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_open_carton.004__0" file="assets/019542bbab75e3d0.obj" />
+    <material name="mat_open_carton.004__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_wrist_camera_bracket__0" file="assets/70609d46f34de73e.obj" />
+    <material name="mat_wrist_camera_bracket__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_stand_upper_arm__0" file="assets/b761c4ad38bedc9c.obj" />
+    <material name="mat_stand_upper_arm__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_stand_red_joint__0" file="assets/6f0cc82ccea4ba93.obj" />
+    <material name="mat_stand_red_joint__0" rgba="0.4000000059604645 0.017999999225139618 0.03999999910593033 1" specular="0.25000000149011614" shininess="0.5" reflectance="0" />
+    <mesh name="sync_cabinet_body__0" file="assets/1075d950dd4f3e8c.obj" />
+    <material name="mat_cabinet_body__0" rgba="0.7799999713897705 0.7699999809265137 0.6299999952316284 1" specular="0.15" shininess="0.5" reflectance="0" />
+    <mesh name="sync_chair_seat__0" file="assets/1891cff7def9a805.obj" />
+    <material name="mat_chair_seat__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_chair_back__0" file="assets/26d2228e042acb80.obj" />
+    <material name="mat_chair_back__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_chair_support__0" file="assets/9e0575b0f55f66dc.obj" />
+    <material name="mat_chair_support__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_cabinet_handle__0" file="assets/36f2d3ca8b7d5308.obj" />
+    <material name="mat_cabinet_handle__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_cabinet_handle.001__0" file="assets/55d0aa23da116c86.obj" />
+    <material name="mat_cabinet_handle.001__0" rgba="0.3499999940395355 0.4000000059604645 0.4300000071525574 1" specular="0.5500000059604645" shininess="0.6500000059604645" reflectance="0" />
+    <mesh name="sync_cabinet_door__0" file="assets/ec0008d0a5bc3245.obj" />
+    <material name="mat_cabinet_door__0" rgba="0.7799999713897705 0.7699999809265137 0.6299999952316284 1" specular="0.15" shininess="0.5" reflectance="0" />
+    <mesh name="sync_cabinet_door.001__0" file="assets/e4ff28dd102b545b.obj" />
+    <material name="mat_cabinet_door.001__0" rgba="0.7799999713897705 0.7699999809265137 0.6299999952316284 1" specular="0.15" shininess="0.5" reflectance="0" />
+    <mesh name="sync_carton_flap__0" file="assets/a9c0022f1466e208.obj" />
+    <material name="mat_carton_flap__0" rgba="0.33000001311302185 0.25 0.14000000059604645 1" specular="0.15" shininess="0.10000002384185791" reflectance="0" />
+    <mesh name="sync_key__0" file="assets/524757092d4e6408.obj" />
+    <material name="mat_key__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.001__0" file="assets/cce0ee97745fc1ba.obj" />
+    <material name="mat_key.001__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.002__0" file="assets/925de938b682f326.obj" />
+    <material name="mat_key.002__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.003__0" file="assets/c367520036073637.obj" />
+    <material name="mat_key.003__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.004__0" file="assets/ba15b3f347f082ae.obj" />
+    <material name="mat_key.004__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.005__0" file="assets/e8377933a5b9295d.obj" />
+    <material name="mat_key.005__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.006__0" file="assets/4715f889bd50d8e6.obj" />
+    <material name="mat_key.006__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.007__0" file="assets/352b30a98cb1593a.obj" />
+    <material name="mat_key.007__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.008__0" file="assets/04f361f6a82308f1.obj" />
+    <material name="mat_key.008__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.009__0" file="assets/8e9fe25e2af851f8.obj" />
+    <material name="mat_key.009__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.010__0" file="assets/b19469088bfca463.obj" />
+    <material name="mat_key.010__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.011__0" file="assets/b8388a1fc215a19e.obj" />
+    <material name="mat_key.011__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.012__0" file="assets/dd29922d77a3e4d2.obj" />
+    <material name="mat_key.012__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.013__0" file="assets/73ff9445f749538f.obj" />
+    <material name="mat_key.013__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.014__0" file="assets/6d0ea95c86135393.obj" />
+    <material name="mat_key.014__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.015__0" file="assets/6a688802e13fef60.obj" />
+    <material name="mat_key.015__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.016__0" file="assets/164a87881e03207a.obj" />
+    <material name="mat_key.016__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.017__0" file="assets/bc9bfe882f866a25.obj" />
+    <material name="mat_key.017__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.018__0" file="assets/9076e2305251ed30.obj" />
+    <material name="mat_key.018__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.019__0" file="assets/b3336e68b1225219.obj" />
+    <material name="mat_key.019__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.020__0" file="assets/b2032f81670d5721.obj" />
+    <material name="mat_key.020__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.021__0" file="assets/bf696c0ce781ca77.obj" />
+    <material name="mat_key.021__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.022__0" file="assets/a756098e0e7bf824.obj" />
+    <material name="mat_key.022__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.023__0" file="assets/c5771b66b958795d.obj" />
+    <material name="mat_key.023__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.024__0" file="assets/55c94b1a89cd88a1.obj" />
+    <material name="mat_key.024__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.025__0" file="assets/1135fb30aee3f84a.obj" />
+    <material name="mat_key.025__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.026__0" file="assets/24e376afb6535229.obj" />
+    <material name="mat_key.026__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.027__0" file="assets/7c7113d71de2dcab.obj" />
+    <material name="mat_key.027__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.028__0" file="assets/a21b7a9d2c24e767.obj" />
+    <material name="mat_key.028__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.029__0" file="assets/bdb2ee0097c98e1a.obj" />
+    <material name="mat_key.029__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.030__0" file="assets/e87ea919706e34a8.obj" />
+    <material name="mat_key.030__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.031__0" file="assets/d55e575f6539b01b.obj" />
+    <material name="mat_key.031__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.032__0" file="assets/f1a80ae257a00421.obj" />
+    <material name="mat_key.032__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.033__0" file="assets/cb6c91486d7ec370.obj" />
+    <material name="mat_key.033__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.034__0" file="assets/c4fccbb18f0f9fac.obj" />
+    <material name="mat_key.034__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.035__0" file="assets/00d049cb3742a053.obj" />
+    <material name="mat_key.035__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.036__0" file="assets/067b15b83b6b8d26.obj" />
+    <material name="mat_key.036__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.037__0" file="assets/2f3082b6d34e205e.obj" />
+    <material name="mat_key.037__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.038__0" file="assets/8b85d13258e39770.obj" />
+    <material name="mat_key.038__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.039__0" file="assets/3d77190b1f26d8ce.obj" />
+    <material name="mat_key.039__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.040__0" file="assets/88fc96673602956a.obj" />
+    <material name="mat_key.040__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.041__0" file="assets/6b9f97336c7cc76b.obj" />
+    <material name="mat_key.041__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.042__0" file="assets/b45d322425119acb.obj" />
+    <material name="mat_key.042__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.043__0" file="assets/4257c2c532438061.obj" />
+    <material name="mat_key.043__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.044__0" file="assets/8fa198b7499011d3.obj" />
+    <material name="mat_key.044__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.045__0" file="assets/a90dc45248c70717.obj" />
+    <material name="mat_key.045__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.046__0" file="assets/5cae154c6fd0be1d.obj" />
+    <material name="mat_key.046__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.047__0" file="assets/6bc7b5cbbd2d9152.obj" />
+    <material name="mat_key.047__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.048__0" file="assets/83758fe604af7c9c.obj" />
+    <material name="mat_key.048__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.049__0" file="assets/3e7857858167e4d5.obj" />
+    <material name="mat_key.049__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.050__0" file="assets/e900fd55f0523685.obj" />
+    <material name="mat_key.050__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.051__0" file="assets/f311ca8a41c30c64.obj" />
+    <material name="mat_key.051__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.052__0" file="assets/369a70acc250f11a.obj" />
+    <material name="mat_key.052__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.053__0" file="assets/0feb270f4e1f7f55.obj" />
+    <material name="mat_key.053__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.054__0" file="assets/e774b1d225f72f6a.obj" />
+    <material name="mat_key.054__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.055__0" file="assets/fe4921fd4159978a.obj" />
+    <material name="mat_key.055__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.056__0" file="assets/785dcc99fa2ab093.obj" />
+    <material name="mat_key.056__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.057__0" file="assets/413726e518ee829d.obj" />
+    <material name="mat_key.057__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.058__0" file="assets/ea372e0a637ba987.obj" />
+    <material name="mat_key.058__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.059__0" file="assets/747f6f66192f9057.obj" />
+    <material name="mat_key.059__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.060__0" file="assets/72adb8cf2e7d0485.obj" />
+    <material name="mat_key.060__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.061__0" file="assets/e8932ad74b03e21b.obj" />
+    <material name="mat_key.061__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.062__0" file="assets/b0bbb145cbe630e9.obj" />
+    <material name="mat_key.062__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.063__0" file="assets/eaad8583717d216f.obj" />
+    <material name="mat_key.063__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_key.064__0" file="assets/2330a300ea8ca85f.obj" />
+    <material name="mat_key.064__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_mouse__0" file="assets/07ff4651f43e2c41.obj" />
+    <material name="mat_mouse__0" rgba="0.02800000086426735 0.032999999821186066 0.03700000047683716 1" specular="0.450000011920929" shininess="0.7199999988079071" reflectance="0" />
+    <mesh name="sync_grey_floor__0" file="assets/2f2b8c514956081e.obj" />
+    <material name="mat_grey_floor__0" rgba="0.36000001430511475 0.38999998569488525 0.38999998569488525 1" specular="0.15" shininess="0.050000011920928955" reflectance="0" />
+  <texture name="new_cap" type="2d" file="assets/2fef5d5b5408ecc8.png" /><texture name="new_wood" type="2d" file="assets/67f78fd7b358833d.png" /></asset>
+  <worldbody>
+    <body name="dummy_link">
+      <body name="base_link">
+        <inertial pos="-0.00473641 2.56829e-05 0.0414515" quat="0.70428 0.034288 0.0339756 0.708279" mass="1.02" diaginertia="0.00282612 0.00269117 0.000879394" />
+        <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="base_link" />
+        <geom type="mesh" rgba="0 0 0 0" mesh="base_link" contype="0" conaffinity="0" group="3" />
+        <body name="link1" pos="0 0 0.123">
+          <inertial pos="0.000121505 0.000104632 -0.00438597" quat="0.682111 0.730899 0.0143111 -0.0175062" mass="0.71" diaginertia="0.000489262 0.000439887 0.000404551" />
+          <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-2.618 2.618" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+          <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link1" />
+          <geom type="mesh" rgba="0 0 0 0" mesh="link1" contype="0" conaffinity="0" group="3" />
+          <body name="link2" quat="0.0480084 -0.0480134 -0.705476 -0.705474">
+            <inertial pos="0.198666 -0.0109269 0.00142122" quat="0.510131 0.475585 0.525075 0.48773" mass="1.17" diaginertia="0.0679032 0.067745 0.00111966" />
+            <joint name="joint2" pos="0 0 0" axis="0 0 1" range="0 3.14" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+            <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link2" />
+            <geom type="mesh" rgba="0 0 0 0" mesh="link2" contype="8" conaffinity="5" group="3" />
+            <body name="link3" pos="0.28503 0 0" quat="0.623996 0 0 -0.781427">
+              <inertial pos="-0.0202738 -0.133915 -0.000458683" quat="0.706282 0.705111 0.0532202 0.0339395" mass="0.5" diaginertia="0.0138227 0.0138032 0.000244685" />
+              <joint name="joint3" pos="0 0 0" axis="0 0 1" range="-2.967 0" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+              <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link3" />
+              <geom type="mesh" rgba="0 0 0 0" mesh="link3" contype="8" conaffinity="5" group="3" />
+              <body name="link4" pos="-0.021984 -0.25075 0" quat="0.707105 0.707108 0 0">
+                <inertial pos="-9.66636e-05 0.000876064 -0.00496881" quat="0.714689 -0.0948484 0.0635223 0.690064" mass="0.38" diaginertia="0.000191586 0.000185052 0.000152863" />
+                <joint name="joint4" pos="0 0 0" axis="0 0 1" range="-1.745 1.745" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+                <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link4" />
+                <geom type="mesh" rgba="0 0 0 0" mesh="link4" contype="8" conaffinity="5" group="3" />
+                <body name="link5" quat="0.707105 -0.707108 0 0">
+                  <inertial pos="-4.10554e-05 -0.0566487 -0.00372058" quat="0.709589 0.704614 0.00134613 -0.00132656" mass="0.383" diaginertia="0.00166169 0.00164328 0.000185028" />
+                  <joint name="joint5" pos="0 0 0" axis="0 0 1" range="-1.22 1.22" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+                  <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link5" />
+                  <geom type="mesh" rgba="0 0 0 0" mesh="link5" contype="8" conaffinity="5" group="3" />
+                  <body name="link6" pos="8.8259e-05 -0.091 0" quat="0.707105 0.707108 0 0">
+                    <inertial pos="-8.82591e-05 9.05984e-06 -0.002" quat="0.5 0.5 -0.5 0.5" mass="0.007" diaginertia="1.06739e-06 5.73016e-07 5.73016e-07" />
+                    <joint name="joint6" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-100 100" damping="2" armature=".02" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link6" />
+                    <geom type="mesh" rgba="0 0 0 0" mesh="link6" contype="8" conaffinity="5" group="3" />
+                    <body name="gripper_base">
+                      <inertial pos="-0.000183807 8.05033e-05 0.0321437" quat="0.999976 9.08444e-05 0.00689649 0.000788512" mass="0.45" diaginertia="0.000929442 0.000714469 0.000394318" />
+                      <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="gripper_base" />
+                      <geom type="mesh" rgba="0 0 0 0" mesh="gripper_base" contype="8" conaffinity="5" group="3" />
+                      <body name="link7" pos="0 0 0.1358" quat="0.707105 0.707108 0 0">
+                        <inertial pos="0.000651232 -0.049193 0.00972259" quat="0.477798 0.572974 -0.518028 0.418398" mass="0.025" diaginertia="7.74531e-05 7.36783e-05 5.0886e-06" />
+                        <joint name="joint7" pos="0 0 0" axis="0 0 1" type="slide" range="0 0.035" actuatorfrcrange="-10 10" damping="1" armature=".005" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link7" />
+                        <geom type="mesh" rgba="0 0 0 0" mesh="link7" contype="0" conaffinity="0" group="3" />
+                        <geom name="pad7" type="box" pos="0 -.065 .010" size=".023 .010 .008" contype="0" conaffinity="0" friction=".8 .005 .005" condim="6" solref=".01 1" solimp=".95 .99 .001" rgba="0 0 0 0" mass="0" group="3" />
+                        <geom name="sync_piper_link7__0" type="mesh" mesh="sync_piper_link7__0" material="mat_piper_link7__0" contype="0" conaffinity="0" mass="0" group="2" />
+                      <geom name="finger_collision7" type="mesh" mesh="link7" contype="2" conaffinity="5" mass="0" rgba="0 0 0 0" group="3" friction=".8 .005 .005" condim="6" solref=".01 1" solimp=".95 .99 .001" /></body>
+                      <body name="link8" pos="0 0 0.1358" quat="-2.59734e-06 -2.59735e-06 -0.707108 -0.707105">
+                        <inertial pos="0.000651232 -0.049193 0.00972259" quat="0.477798 0.572974 -0.518028 0.418398" mass="0.025" diaginertia="7.74531e-05 7.36783e-05 5.0886e-06" />
+                        <joint name="joint8" pos="0 0 0" axis="0 0 -1" type="slide" range="-0.035 0" actuatorfrcrange="-10 10" damping="1" armature=".005" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="3" density="0" rgba="0 0 0 0" mesh="link8" />
+                        <geom type="mesh" rgba="0 0 0 0" mesh="link8" contype="0" conaffinity="0" group="3" />
+                        <geom name="pad8" type="box" pos="0 -.065 .010" size=".023 .010 .008" contype="0" conaffinity="0" friction=".8 .005 .005" condim="6" solref=".01 1" solimp=".95 .99 .001" rgba="0 0 0 0" mass="0" group="3" />
+                        <geom name="sync_piper_link8__0" type="mesh" mesh="sync_piper_link8__0" material="mat_piper_link8__0" contype="0" conaffinity="0" mass="0" group="2" />
+                      <geom name="finger_collision8" type="mesh" mesh="link8" contype="2" conaffinity="5" mass="0" rgba="0 0 0 0" group="3" friction=".8 .005 .005" condim="6" solref=".01 1" solimp=".95 .99 .001" /></body>
+                      <geom name="sync_piper_gripper_base__0" type="mesh" mesh="sync_piper_gripper_base__0" material="mat_piper_gripper_base__0" contype="0" conaffinity="0" mass="0" group="2" />
+                    </body>
+                    <camera name="camera1_wrist" pos="-0.08684335810705471 0.010781248856068168 0.034729653190384555" quat="-0.0788364637297508 -0.6997450519628495 0.7037911795112214 0.09391299101988314" resolution="640 480" focalpixel="502.2064953157236 501.4844800925727" principalpixel="5.026777411264902 -38.15599376887303" sensorsize="0.0064 0.0048" />
+                    <geom name="display_wrist_camera_housing" type="mesh" mesh="display_wrist_camera_housing" pos="-0.08684335833159412 0.010781249893787453 0.034729652296334484" quat="-0.6997450492231867 0.078836471526225 -0.09391300442275781 0.7037911795733348" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+                    <geom name="display_wrist_camera_bracket" type="mesh" mesh="display_wrist_camera_bracket" pos="-0.04342166828304883 0.005390624269417471 0.017364830213251005" quat="0.52801848390945 -0.47333272543734084 -0.3025185222789865 0.6368949327464954" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+                    <geom name="sync_piper_link6__0" type="mesh" mesh="sync_piper_link6__0" material="mat_piper_link6__0" contype="0" conaffinity="0" mass="0" group="2" />
+                    <geom name="sync_wrist_camera_housing__0" type="mesh" mesh="sync_wrist_camera_housing__0" material="mat_wrist_camera_housing__0" contype="0" conaffinity="0" mass="0" group="2" />
+                    <geom name="sync_wrist_camera_bracket__0" type="mesh" mesh="sync_wrist_camera_bracket__0" material="mat_wrist_camera_bracket__0" contype="0" conaffinity="0" mass="0" group="2" />
+                  </body>
+                  <geom name="sync_piper_link5__0" type="mesh" mesh="sync_piper_link5__0" material="mat_piper_link5__0" contype="0" conaffinity="0" mass="0" group="2" />
+                </body>
+                <geom name="sync_piper_link4__0" type="mesh" mesh="sync_piper_link4__0" material="mat_piper_link4__0" contype="0" conaffinity="0" mass="0" group="2" />
+              </body>
+              <geom name="sync_piper_link3__0" type="mesh" mesh="sync_piper_link3__0" material="mat_piper_link3__0" contype="0" conaffinity="0" mass="0" group="2" />
+              <geom name="sync_piper_link3__1" type="mesh" mesh="sync_piper_link3__1" material="mat_piper_link3__1" contype="0" conaffinity="0" mass="0" group="2" />
+            </body>
+            <geom name="sync_piper_link2__0" type="mesh" mesh="sync_piper_link2__0" material="mat_piper_link2__0" contype="0" conaffinity="0" mass="0" group="2" />
+            <geom name="sync_piper_link2__1" type="mesh" mesh="sync_piper_link2__1" material="mat_piper_link2__1" contype="0" conaffinity="0" mass="0" group="2" />
+          </body>
+          <geom name="sync_piper_link1__0" type="mesh" mesh="sync_piper_link1__0" material="mat_piper_link1__0" contype="0" conaffinity="0" mass="0" group="2" />
+        </body>
+        <geom name="sync_piper_base_link__0" type="mesh" mesh="sync_piper_base_link__0" material="mat_piper_base_link__0" contype="0" conaffinity="0" mass="0" group="2" />
+      </body>
+    </body>
+    <camera name="camera2_fixed" pos="0.17132949194424912 -0.21363796138105773 0.42160733316726623" quat="0.9583116230308472 0.274504016460215 0.013270726794781633 -0.0781681899594186" resolution="640 480" focalpixel="486.9376737691155 483.1111845246988" principalpixel="-0.7465539045007858 -24.726752668380016" sensorsize="0.0064 0.0048" />
+    <light pos="0 0 2" diffuse=".3 .3 .3" castshadow="false" />
+    <geom name="table" type="box" pos="0.18023035611675492 0.30033754603895446 -0.027" size="0.6931384591923735 0.2222000281960348 0.012" quat="0.7174460779736526 0.0 0.0 0.6966140432120383" rgba="0 0 0 0" contype="4" conaffinity="3" group="3" />
+    <geom name="white_pad" type="box" pos="0.28161664647675777 -0.07124572581462711 -0.009" size="0.05494928675857783 0.05628462650539941 .006" rgba="0 0 0 0" contype="4" conaffinity="3" group="3" />
+    <body name="bottle" pos="0.28827628178549897 0.10672955786114159 -.015">
+      <geom name="bottle_proxy" type="cylinder" pos="0 0 0.07511410523605816" size=".0313713593543 0.07511410523605816" rgba="0 0 0 0" mass=".18" contype="1" conaffinity="6" friction=".8 .005 .005" condim="6" solref=".01 1" group="3" />
+      <freejoint name="bottle_free" />
+      <geom name="display_bottle" type="mesh" mesh="display_bottle" pos="-.27681903621865983 -.09652770137871886 .015" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+      <geom name="sync_bottle__0" type="mesh" mesh="sync_bottle__0" material="mat_bottle__0" contype="0" conaffinity="0" mass="0" group="2" />
+      <geom name="sync_bottle__1" type="mesh" mesh="sync_bottle__1" material="mat_bottle__1" contype="0" conaffinity="0" mass="0" group="2" />
+    </body>
+    <geom name="display_tabletop" type="mesh" mesh="display_tabletop" pos="0.14845024049282074 0.3012741208076477 -0.027000000700354576" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_table_leg" type="mesh" mesh="display_table_leg" pos="0.26828229427337646 -0.3583424687385559 -0.3944999873638153" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_table_leg.001" type="mesh" mesh="display_table_leg.001" pos="-0.1672709584236145 -0.2901427149772644 -0.3944999873638153" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_table_leg.002" type="mesh" mesh="display_table_leg.002" pos="0.464171439409256 0.8926909565925598 -0.3944999873638153" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_table_leg.003" type="mesh" mesh="display_table_leg.003" pos="0.028618188574910164 0.9608907103538513 -0.3944999873638153" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_floor" type="mesh" mesh="display_floor" pos="0.10000000149011612 0.0 -0.7649999856948853" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_white_pad" type="mesh" mesh="display_white_pad" pos="0.2792736291885376 -0.07009943574666977 -0.008999999612569809" quat="0.9999855188991882 0.0 0.0 -0.005381634688593023" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_base_mount_plate" type="mesh" mesh="display_base_mount_plate" pos="0.0 0.0 -0.008999999612569809" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_thermos" type="mesh" mesh="display_thermos" pos="0.2514209747314453 0.3155505955219269 0.0949999988079071" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_thermos_pink_band" type="mesh" mesh="display_thermos_pink_band" pos="0.2514209747314453 0.3155505955219269 0.17640000581741333" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_marker" type="mesh" mesh="display_marker" pos="0.3557150661945343 0.43091633915901184 0.02500000037252903" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_black_rectangular_device" type="mesh" mesh="display_black_rectangular_device" pos="0.07202392816543579 0.3682151138782501 -0.006000000052154064" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_monitor" type="mesh" mesh="display_monitor" pos="0.31584951281547546 0.6893821954727173 0.1850000023841858" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_monitor_stand" type="mesh" mesh="display_monitor_stand" pos="0.31584951281547546 0.6893821954727173 0.03500000014901161" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_keyboard" type="mesh" mesh="display_keyboard" pos="0.11221075057983398 0.7769474983215332 -0.003000000026077032" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_camera2_stand" type="mesh" mesh="display_camera2_stand" pos="0.23911482095718384 -0.33214521408081055 0.22533902525901794" quat="-0.2460429301804621 -0.021951213187629156 0.08611022557972309 0.9651766935636256" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_camera2_clamp" type="mesh" mesh="display_camera2_clamp" pos="0.2589486837387085 -0.36851930618286133 -0.004999999888241291" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_camera2_housing" type="mesh" mesh="display_camera2_housing" pos="0.17132949829101562 -0.21363797783851624 0.4216073155403137" quat="-0.2745038574029076 0.9583116531259742 -0.07816836341785909 -0.013270821921055288" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_open_carton" type="mesh" mesh="display_open_carton" pos="0.5285560488700867 0.3491643965244293 -0.7459999918937683" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_open_carton.001" type="mesh" mesh="display_open_carton.001" pos="0.35855603218078613 0.3491643965244293 -0.5959999561309814" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_open_carton.002" type="mesh" mesh="display_open_carton.002" pos="0.6985560655593872 0.3491643965244293 -0.5959999561309814" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_open_carton.003" type="mesh" mesh="display_open_carton.003" pos="0.5285560488700867 0.20916438102722168 -0.5959999561309814" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_open_carton.004" type="mesh" mesh="display_open_carton.004" pos="0.5285560488700867 0.4891643822193146 -0.5959999561309814" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_stand_upper_arm" type="mesh" mesh="display_stand_upper_arm" pos="0.19323429465293884 -0.2523583173751831 0.40160733461380005" quat="-0.21376083545518784 -0.1382688796411728 0.5252259331256012 0.8119887568929859" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_stand_red_joint" type="mesh" mesh="display_stand_red_joint" pos="0.21513909101486206 -0.2910786271095276 0.381607323884964" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_cabinet_body" type="mesh" mesh="display_cabinet_body" pos="-0.9205686450004578 0.02373027801513672 -0.39000001549720764" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_chair_seat" type="mesh" mesh="display_chair_seat" pos="-0.31684058904647827 0.5153735876083374 -0.29499998688697815" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_chair_back" type="mesh" mesh="display_chair_back" pos="-0.46684059500694275 0.5153735876083374 -0.02500000037252903" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_chair_support" type="mesh" mesh="display_chair_support" pos="-0.31684058904647827 0.5153735876083374 -0.5374999642372131" quat="-4.371138828673781e-08 0.0 0.0 0.9999999999999991" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_cabinet_handle" type="mesh" mesh="display_cabinet_handle" pos="-0.7055686712265015 -0.05626972019672394 -0.3100000023841858" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_cabinet_handle.001" type="mesh" mesh="display_cabinet_handle.001" pos="-0.7055686712265015 0.10373027622699738 -0.3100000023841858" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_cabinet_door" type="mesh" mesh="display_cabinet_door" pos="-0.7155686616897583 -0.13126972317695618 -0.39000001549720764" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_cabinet_door.001" type="mesh" mesh="display_cabinet_door.001" pos="-0.7155686616897583 0.17873027920722961 -0.39000001549720764" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_carton_flap" type="mesh" mesh="display_carton_flap" pos="0.7785560488700867 0.3491643965244293 -0.47599998116493225" quat="0.9689124198247626 0.0 -0.2474039666402358 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key" type="mesh" mesh="display_key" pos="0.21926933526992798 0.7237453460693359 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.001" type="mesh" mesh="display_key.001" pos="0.2004980444908142 0.7266846299171448 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.002" type="mesh" mesh="display_key.002" pos="0.18172675371170044 0.7296239137649536 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.003" type="mesh" mesh="display_key.003" pos="0.16295549273490906 0.7325631380081177 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.004" type="mesh" mesh="display_key.004" pos="0.1441842019557953 0.7355023622512817 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.005" type="mesh" mesh="display_key.005" pos="0.1254129409790039 0.7384415864944458 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.006" type="mesh" mesh="display_key.006" pos="0.10664165019989014 0.7413808107376099 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.007" type="mesh" mesh="display_key.007" pos="0.08787038922309875 0.7443200945854187 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.008" type="mesh" mesh="display_key.008" pos="0.06909911334514618 0.7472593188285828 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.009" type="mesh" mesh="display_key.009" pos="0.05032782256603241 0.7501986026763916 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.010" type="mesh" mesh="display_key.010" pos="0.03155656158924103 0.7531378269195557 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.011" type="mesh" mesh="display_key.011" pos="0.012785270810127258 0.7560770511627197 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.012" type="mesh" mesh="display_key.012" pos="-0.005986005067825317 0.7590162754058838 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.013" type="mesh" mesh="display_key.013" pos="0.22205385565757751 0.7415286898612976 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.014" type="mesh" mesh="display_key.014" pos="0.20328259468078613 0.7444679737091064 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.015" type="mesh" mesh="display_key.015" pos="0.18451130390167236 0.7474071979522705 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.016" type="mesh" mesh="display_key.016" pos="0.16574004292488098 0.7503464221954346 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.017" type="mesh" mesh="display_key.017" pos="0.1469687521457672 0.7532856464385986 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.018" type="mesh" mesh="display_key.018" pos="0.12819749116897583 0.7562248706817627 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.019" type="mesh" mesh="display_key.019" pos="0.10942620038986206 0.7591641545295715 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.020" type="mesh" mesh="display_key.020" pos="0.09065493941307068 0.7621034383773804 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.021" type="mesh" mesh="display_key.021" pos="0.07188364863395691 0.7650426626205444 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.022" type="mesh" mesh="display_key.022" pos="0.053112372756004333 0.7679818868637085 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.023" type="mesh" mesh="display_key.023" pos="0.03434109687805176 0.7709211111068726 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.024" type="mesh" mesh="display_key.024" pos="0.015569821000099182 0.7738603353500366 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.025" type="mesh" mesh="display_key.025" pos="-0.0032014548778533936 0.7767996191978455 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.026" type="mesh" mesh="display_key.026" pos="0.22483840584754944 0.7593120336532593 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.027" type="mesh" mesh="display_key.027" pos="0.20606714487075806 0.7622512578964233 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.028" type="mesh" mesh="display_key.028" pos="0.1872958540916443 0.7651904821395874 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.029" type="mesh" mesh="display_key.029" pos="0.1685245931148529 0.7681297063827515 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.030" type="mesh" mesh="display_key.030" pos="0.14975330233573914 0.7710689902305603 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.031" type="mesh" mesh="display_key.031" pos="0.13098204135894775 0.7740082144737244 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.032" type="mesh" mesh="display_key.032" pos="0.11221075057983398 0.7769474983215332 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.033" type="mesh" mesh="display_key.033" pos="0.09343945980072021 0.7798867225646973 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.034" type="mesh" mesh="display_key.034" pos="0.07466819882392883 0.7828259468078613 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.035" type="mesh" mesh="display_key.035" pos="0.05589692294597626 0.7857651710510254 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.036" type="mesh" mesh="display_key.036" pos="0.03712564706802368 0.7887043952941895 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.037" type="mesh" mesh="display_key.037" pos="0.018354356288909912 0.7916436791419983 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.038" type="mesh" mesh="display_key.038" pos="-0.0004169046878814697 0.7945829629898071 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.039" type="mesh" mesh="display_key.039" pos="0.22762295603752136 0.7770953178405762 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.040" type="mesh" mesh="display_key.040" pos="0.20885169506072998 0.7800345420837402 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.041" type="mesh" mesh="display_key.041" pos="0.1900804042816162 0.7829738259315491 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.042" type="mesh" mesh="display_key.042" pos="0.17130911350250244 0.7859130501747131 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.043" type="mesh" mesh="display_key.043" pos="0.15253785252571106 0.788852334022522 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.044" type="mesh" mesh="display_key.044" pos="0.1337665617465973 0.791791558265686 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.045" type="mesh" mesh="display_key.045" pos="0.11499530076980591 0.7947307825088501 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.046" type="mesh" mesh="display_key.046" pos="0.09622400999069214 0.7976700067520142 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.047" type="mesh" mesh="display_key.047" pos="0.07745274901390076 0.8006092309951782 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.048" type="mesh" mesh="display_key.048" pos="0.05868145823478699 0.8035485148429871 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.049" type="mesh" mesh="display_key.049" pos="0.039910197257995605 0.8064877390861511 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.050" type="mesh" mesh="display_key.050" pos="0.021138906478881836 0.80942702293396 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.051" type="mesh" mesh="display_key.051" pos="0.0023676306009292603 0.812366247177124 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.052" type="mesh" mesh="display_key.052" pos="0.2304075062274933 0.7948786020278931 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.053" type="mesh" mesh="display_key.053" pos="0.21163621544837952 0.7978178858757019 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.054" type="mesh" mesh="display_key.054" pos="0.19286495447158813 0.8007571697235107 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.055" type="mesh" mesh="display_key.055" pos="0.17409366369247437 0.8036963939666748 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.056" type="mesh" mesh="display_key.056" pos="0.15532240271568298 0.8066356182098389 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.057" type="mesh" mesh="display_key.057" pos="0.1365511119365692 0.8095748424530029 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.058" type="mesh" mesh="display_key.058" pos="0.11777985095977783 0.812514066696167 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.059" type="mesh" mesh="display_key.059" pos="0.09900856018066406 0.8154533505439758 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.060" type="mesh" mesh="display_key.060" pos="0.08023729920387268 0.8183925747871399 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.061" type="mesh" mesh="display_key.061" pos="0.06146600842475891 0.8213318586349487 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.062" type="mesh" mesh="display_key.062" pos="0.042694732546806335 0.8242710828781128 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.063" type="mesh" mesh="display_key.063" pos="0.02392345666885376 0.8272103071212769 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_key.064" type="mesh" mesh="display_key.064" pos="0.005152180790901184 0.8301495313644409 0.010999999940395355" quat="0.7598345129062772 0.0 0.0 0.6501165380118247" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_mouse" type="mesh" mesh="display_mouse" pos="0.04367145150899887 0.4979749023914337 -0.003000000026077032" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="display_grey_floor" type="mesh" mesh="display_grey_floor" pos="-0.800000011920929 0.0 -0.7630000114440918" quat="1.0 0.0 0.0 0.0" rgba="0 0 0 0" contype="0" conaffinity="0" group="3" />
+    <geom name="sync_tabletop__0" type="mesh" mesh="sync_tabletop__0" material="mat_tabletop__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_table_leg__0" type="mesh" mesh="sync_table_leg__0" material="mat_table_leg__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_table_leg.001__0" type="mesh" mesh="sync_table_leg.001__0" material="mat_table_leg.001__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_table_leg.002__0" type="mesh" mesh="sync_table_leg.002__0" material="mat_table_leg.002__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_table_leg.003__0" type="mesh" mesh="sync_table_leg.003__0" material="mat_table_leg.003__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_floor__0" type="mesh" mesh="sync_floor__0" material="mat_floor__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_white_pad__0" type="mesh" mesh="sync_white_pad__0" material="mat_white_pad__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_base_mount_plate__0" type="mesh" mesh="sync_base_mount_plate__0" material="mat_base_mount_plate__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_thermos__0" type="mesh" mesh="sync_thermos__0" material="mat_thermos__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_thermos_pink_band__0" type="mesh" mesh="sync_thermos_pink_band__0" material="mat_thermos_pink_band__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_marker__0" type="mesh" mesh="sync_marker__0" material="mat_marker__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_black_rectangular_device__0" type="mesh" mesh="sync_black_rectangular_device__0" material="mat_black_rectangular_device__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_monitor__0" type="mesh" mesh="sync_monitor__0" material="mat_monitor__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_monitor_stand__0" type="mesh" mesh="sync_monitor_stand__0" material="mat_monitor_stand__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_keyboard__0" type="mesh" mesh="sync_keyboard__0" material="mat_keyboard__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_camera2_stand__0" type="mesh" mesh="sync_camera2_stand__0" material="mat_camera2_stand__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_camera2_clamp__0" type="mesh" mesh="sync_camera2_clamp__0" material="mat_camera2_clamp__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_camera2_housing__0" type="mesh" mesh="sync_camera2_housing__0" material="mat_camera2_housing__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_open_carton__0" type="mesh" mesh="sync_open_carton__0" material="mat_open_carton__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_open_carton.001__0" type="mesh" mesh="sync_open_carton.001__0" material="mat_open_carton.001__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_open_carton.002__0" type="mesh" mesh="sync_open_carton.002__0" material="mat_open_carton.002__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_open_carton.003__0" type="mesh" mesh="sync_open_carton.003__0" material="mat_open_carton.003__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_open_carton.004__0" type="mesh" mesh="sync_open_carton.004__0" material="mat_open_carton.004__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_stand_upper_arm__0" type="mesh" mesh="sync_stand_upper_arm__0" material="mat_stand_upper_arm__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_stand_red_joint__0" type="mesh" mesh="sync_stand_red_joint__0" material="mat_stand_red_joint__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_cabinet_body__0" type="mesh" mesh="sync_cabinet_body__0" material="mat_cabinet_body__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_chair_seat__0" type="mesh" mesh="sync_chair_seat__0" material="mat_chair_seat__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_chair_back__0" type="mesh" mesh="sync_chair_back__0" material="mat_chair_back__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_chair_support__0" type="mesh" mesh="sync_chair_support__0" material="mat_chair_support__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_cabinet_handle__0" type="mesh" mesh="sync_cabinet_handle__0" material="mat_cabinet_handle__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_cabinet_handle.001__0" type="mesh" mesh="sync_cabinet_handle.001__0" material="mat_cabinet_handle.001__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_cabinet_door__0" type="mesh" mesh="sync_cabinet_door__0" material="mat_cabinet_door__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_cabinet_door.001__0" type="mesh" mesh="sync_cabinet_door.001__0" material="mat_cabinet_door.001__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_carton_flap__0" type="mesh" mesh="sync_carton_flap__0" material="mat_carton_flap__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key__0" type="mesh" mesh="sync_key__0" material="mat_key__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.001__0" type="mesh" mesh="sync_key.001__0" material="mat_key.001__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.002__0" type="mesh" mesh="sync_key.002__0" material="mat_key.002__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.003__0" type="mesh" mesh="sync_key.003__0" material="mat_key.003__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.004__0" type="mesh" mesh="sync_key.004__0" material="mat_key.004__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.005__0" type="mesh" mesh="sync_key.005__0" material="mat_key.005__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.006__0" type="mesh" mesh="sync_key.006__0" material="mat_key.006__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.007__0" type="mesh" mesh="sync_key.007__0" material="mat_key.007__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.008__0" type="mesh" mesh="sync_key.008__0" material="mat_key.008__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.009__0" type="mesh" mesh="sync_key.009__0" material="mat_key.009__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.010__0" type="mesh" mesh="sync_key.010__0" material="mat_key.010__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.011__0" type="mesh" mesh="sync_key.011__0" material="mat_key.011__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.012__0" type="mesh" mesh="sync_key.012__0" material="mat_key.012__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.013__0" type="mesh" mesh="sync_key.013__0" material="mat_key.013__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.014__0" type="mesh" mesh="sync_key.014__0" material="mat_key.014__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.015__0" type="mesh" mesh="sync_key.015__0" material="mat_key.015__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.016__0" type="mesh" mesh="sync_key.016__0" material="mat_key.016__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.017__0" type="mesh" mesh="sync_key.017__0" material="mat_key.017__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.018__0" type="mesh" mesh="sync_key.018__0" material="mat_key.018__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.019__0" type="mesh" mesh="sync_key.019__0" material="mat_key.019__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.020__0" type="mesh" mesh="sync_key.020__0" material="mat_key.020__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.021__0" type="mesh" mesh="sync_key.021__0" material="mat_key.021__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.022__0" type="mesh" mesh="sync_key.022__0" material="mat_key.022__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.023__0" type="mesh" mesh="sync_key.023__0" material="mat_key.023__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.024__0" type="mesh" mesh="sync_key.024__0" material="mat_key.024__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.025__0" type="mesh" mesh="sync_key.025__0" material="mat_key.025__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.026__0" type="mesh" mesh="sync_key.026__0" material="mat_key.026__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.027__0" type="mesh" mesh="sync_key.027__0" material="mat_key.027__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.028__0" type="mesh" mesh="sync_key.028__0" material="mat_key.028__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.029__0" type="mesh" mesh="sync_key.029__0" material="mat_key.029__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.030__0" type="mesh" mesh="sync_key.030__0" material="mat_key.030__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.031__0" type="mesh" mesh="sync_key.031__0" material="mat_key.031__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.032__0" type="mesh" mesh="sync_key.032__0" material="mat_key.032__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.033__0" type="mesh" mesh="sync_key.033__0" material="mat_key.033__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.034__0" type="mesh" mesh="sync_key.034__0" material="mat_key.034__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.035__0" type="mesh" mesh="sync_key.035__0" material="mat_key.035__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.036__0" type="mesh" mesh="sync_key.036__0" material="mat_key.036__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.037__0" type="mesh" mesh="sync_key.037__0" material="mat_key.037__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.038__0" type="mesh" mesh="sync_key.038__0" material="mat_key.038__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.039__0" type="mesh" mesh="sync_key.039__0" material="mat_key.039__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.040__0" type="mesh" mesh="sync_key.040__0" material="mat_key.040__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.041__0" type="mesh" mesh="sync_key.041__0" material="mat_key.041__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.042__0" type="mesh" mesh="sync_key.042__0" material="mat_key.042__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.043__0" type="mesh" mesh="sync_key.043__0" material="mat_key.043__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.044__0" type="mesh" mesh="sync_key.044__0" material="mat_key.044__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.045__0" type="mesh" mesh="sync_key.045__0" material="mat_key.045__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.046__0" type="mesh" mesh="sync_key.046__0" material="mat_key.046__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.047__0" type="mesh" mesh="sync_key.047__0" material="mat_key.047__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.048__0" type="mesh" mesh="sync_key.048__0" material="mat_key.048__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.049__0" type="mesh" mesh="sync_key.049__0" material="mat_key.049__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.050__0" type="mesh" mesh="sync_key.050__0" material="mat_key.050__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.051__0" type="mesh" mesh="sync_key.051__0" material="mat_key.051__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.052__0" type="mesh" mesh="sync_key.052__0" material="mat_key.052__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.053__0" type="mesh" mesh="sync_key.053__0" material="mat_key.053__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.054__0" type="mesh" mesh="sync_key.054__0" material="mat_key.054__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.055__0" type="mesh" mesh="sync_key.055__0" material="mat_key.055__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.056__0" type="mesh" mesh="sync_key.056__0" material="mat_key.056__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.057__0" type="mesh" mesh="sync_key.057__0" material="mat_key.057__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.058__0" type="mesh" mesh="sync_key.058__0" material="mat_key.058__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.059__0" type="mesh" mesh="sync_key.059__0" material="mat_key.059__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.060__0" type="mesh" mesh="sync_key.060__0" material="mat_key.060__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.061__0" type="mesh" mesh="sync_key.061__0" material="mat_key.061__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.062__0" type="mesh" mesh="sync_key.062__0" material="mat_key.062__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.063__0" type="mesh" mesh="sync_key.063__0" material="mat_key.063__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_key.064__0" type="mesh" mesh="sync_key.064__0" material="mat_key.064__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_mouse__0" type="mesh" mesh="sync_mouse__0" material="mat_mouse__0" contype="0" conaffinity="0" mass="0" group="2" />
+    <geom name="sync_grey_floor__0" type="mesh" mesh="sync_grey_floor__0" material="mat_grey_floor__0" contype="0" conaffinity="0" mass="0" group="2" />
+  </worldbody>
+  <option timestep=".001" integrator="implicitfast" solver="Newton" iterations="100" cone="elliptic" noslip_iterations="20" />
+  <actuator>
+    <position name="a1" joint="joint1" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a2" joint="joint2" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a3" joint="joint3" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a4" joint="joint4" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a5" joint="joint5" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a6" joint="joint6" kp="600" kv="35" forcerange="-50 50" />
+    <position name="a7" joint="joint7" kp="800" kv="10" forcerange="-8 8" />
+    <position name="a8" joint="joint8" kp="800" kv="10" forcerange="-8 8" />
+  </actuator>
+  <visual>
+    <headlight ambient=".55 .55 .55" diffuse=".35 .35 .35" specular=".08 .08 .08" />
+    <quality shadowsize="4096" offsamples="4" />
+  </visual>
+  <keyframe>
+    <key name="measured_update" qpos="0.372557982131 1.31048046886 -1.13387060185 0 1.23143450704 0.523720948646 0.015 -0.015 0.288276281785 0.106729557861 -0.015 1 0 0 0" />
+  </keyframe>
+</mujoco>

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "nominal",
+    "bottle_delta_xy_m": [
+      0,
+      0
+    ],
+    "split": "baseline"
+  },
+  {
+    "name": "probe_y16",
+    "bottle_delta_xy_m": [
+      0,
+      0.016
+    ],
+    "split": "development"
+  },
+  {
+    "name": "heldout_y18",
+    "bottle_delta_xy_m": [
+      0,
+      0.018
+    ],
+    "split": "heldout"
+  },
+  {
+    "name": "heldout_x8",
+    "bottle_delta_xy_m": [
+      0.008,
+      0
+    ],
+    "split": "heldout"
+  }
+]
